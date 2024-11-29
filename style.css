@@ -49,6 +49,12 @@ button:hover {
   color: #fff;
 }
 
+.no-hover {
+  background-color: #fff !important;
+  color: lightgray !important;
+  cursor: default;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -136,4 +142,12 @@ ul li:not(:last-child) {
 
 .modal button:hover {
   background-color: #333;
+}
+
+dialog:not([open]) {
+  display: none;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5); /* 半透明背景 */
 }
